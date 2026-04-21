@@ -43,6 +43,9 @@ export function Footer() {
               <a href="/quiz" className="text-sm text-foreground hover:text-sage transition-colors">
                 Тест
               </a>
+              <a href="/lawyer" className="text-sm text-terracotta hover:text-terracotta/80 transition-colors">
+                Юрист онлайн
+              </a>
             </nav>
           </div>
 

@@ -48,6 +48,12 @@ export function Header() {
               Памятка
             </Link>
             <Link
+              to="/lawyer"
+              className="text-sm tracking-widest uppercase px-4 py-2 bg-terracotta text-primary-foreground hover:bg-terracotta/90 transition-colors duration-500"
+            >
+              Юрист онлайн
+            </Link>
+            <Link
               to="/quiz"
               className="text-sm tracking-widest uppercase px-4 py-2 bg-sage text-primary-foreground hover:bg-sage/90 transition-colors duration-500"
             >
@@ -112,6 +118,13 @@ export function Header() {
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
               Памятка
+            </Link>
+            <Link
+              to="/lawyer"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-sm tracking-widest uppercase text-terracotta hover:text-terracotta/80 transition-colors"
+            >
+              Юрист онлайн
             </Link>
             <Link
               to="/quiz"
