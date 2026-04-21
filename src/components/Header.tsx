@@ -47,6 +47,12 @@ export function Header() {
             >
               Памятка
             </Link>
+            <Link
+              to="/quiz"
+              className="text-sm tracking-widest uppercase px-4 py-2 bg-sage text-primary-foreground hover:bg-sage/90 transition-colors duration-500"
+            >
+              Тест
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -106,6 +112,13 @@ export function Header() {
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
               Памятка
+            </Link>
+            <Link
+              to="/quiz"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-sm tracking-widest uppercase text-sage hover:text-sage/80 transition-colors"
+            >
+              Тест
             </Link>
           </div>
         </div>

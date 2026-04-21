@@ -40,6 +40,9 @@ export function Footer() {
               <a href="/memo" className="text-sm text-foreground hover:text-sage transition-colors">
                 Памятка
               </a>
+              <a href="/quiz" className="text-sm text-foreground hover:text-sage transition-colors">
+                Тест
+              </a>
             </nav>
           </div>
 

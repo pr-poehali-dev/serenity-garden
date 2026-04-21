@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
@@ -61,12 +62,12 @@ export function Hero() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
-          <a
-            href="#about"
-            className="inline-flex items-center gap-2 px-8 py-4 text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
+          <Link
+            to="/quiz"
+            className="inline-flex items-center gap-2 px-8 py-4 text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500 border border-border hover:border-foreground"
           >
-            Читать далее
-          </a>
+            Пройти тест
+          </Link>
         </div>
       </div>
 
