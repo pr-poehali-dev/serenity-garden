@@ -31,11 +31,19 @@ export function Philosophy() {
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
             }`}
           >
-            <img
-              src="/minimalist-japanese-interior-design-with-natural-w.jpg"
-              alt="Минималистичный интерьер с натуральным деревом"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-8 p-10 bg-gradient-to-br from-sand to-background">
+              {[
+                { icon: "📞", label: "Звонок от «банка»" },
+                { icon: "🔗", label: "Фишинговая ссылка" },
+                { icon: "💬", label: "Поддельный мессенджер" },
+                { icon: "💳", label: "Кража данных карты" },
+              ].map((item) => (
+                <div key={item.label} className="flex items-center gap-4 w-full max-w-xs px-6 py-4 bg-background/80 border border-border">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-sm tracking-wide text-foreground">{item.label}</span>
+                </div>
+              ))}
+            </div>
             {/* Overlay accent */}
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-terracotta/80" />
           </div>
@@ -47,18 +55,17 @@ export function Philosophy() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Наша философия
+              Знай врага в лицо
             </p>
 
             <h2
               className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-foreground mb-8 text-balance transition-all duration-1000 delay-300 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
+              id="about"
             >
-              Искусство
-              <span className="italic"> осознанной</span>
-              <br />
-              жизни
+              Как работают
+              <span className="italic"> мошенники</span>
             </h2>
 
             <div
@@ -67,13 +74,14 @@ export function Philosophy() {
               }`}
             >
               <p>
-                Мы верим, что каждое пространство таит в себе потенциал для преображения. Не через добавление,
-                а через бережное вычитание — открывая то, что всегда было предначертано.
+                Телефонные мошенники используют психологическое давление: они представляются сотрудниками банков, 
+                полиции или госорганов, создают искусственную панику и требуют немедленных действий — перевода денег, 
+                сообщения кодов или установки приложений.
               </p>
               <p>
-                Наш подход вдохновлён японской концепцией <em className="text-foreground">ма</em> — глубокой
-                красотой пустоты — и скандинавским пониманием
-                <em className="text-foreground"> хюгге</em>, этого ощущения уютного умиротворения.
+                Киберпреступники действуют через поддельные сайты, фишинговые письма и вредоносные ссылки.
+                Их цель — похитить ваши <em className="text-foreground">личные данные</em> и получить доступ 
+                к вашим <em className="text-foreground">банковским счетам</em>.
               </p>
             </div>
 
@@ -84,16 +92,16 @@ export function Philosophy() {
               }`}
             >
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">12</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Лет опыта</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">1 млн+</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Жертв в год</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">140+</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Проектов</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">15 млрд</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Ущерб в рублях</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">8</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Наград</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">97%</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Можно предотвратить</p>
               </div>
             </div>
           </div>

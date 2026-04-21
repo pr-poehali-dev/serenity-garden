@@ -44,22 +44,22 @@ export function Contact() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Контакты
+              Есть вопрос или случай?
             </p>
             <h2
               className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-8 text-balance transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Готовы начать?
+              Расскажите нам
             </h2>
             <p
               className={`text-muted-foreground leading-relaxed mb-12 max-w-md transition-all duration-1000 delay-300 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Каждое осмысленное пространство начинается с разговора. Расскажите о вашем видении,
-              и мы вместе найдём способ воплотить его в жизнь.
+              Если вы столкнулись с мошенниками или хотите поделиться историей — напишите нам. 
+              Ваш опыт поможет другим людям не стать жертвой.
             </p>
 
             {/* Contact Info */}
@@ -69,14 +69,16 @@ export function Contact() {
               }`}
             >
               <div>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Почта</p>
-                <a href="mailto:hello@example.com" className="text-foreground hover:text-sage transition-colors">
-                  hello@example.com
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Горячая линия МВД</p>
+                <a href="tel:102" className="text-foreground hover:text-sage transition-colors">
+                  102 (бесплатно)
                 </a>
               </div>
               <div>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Локация</p>
-                <p className="text-foreground">Москва и Санкт-Петербург</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Банк России</p>
+                <a href="tel:88002007818" className="text-foreground hover:text-sage transition-colors">
+                  8-800-200-78-18 (бесплатно)
+                </a>
               </div>
             </div>
           </div>
@@ -118,7 +120,7 @@ export function Contact() {
               </div>
               <div>
                 <label htmlFor="message" className="block text-xs tracking-widest uppercase text-muted-foreground mb-3">
-                  Сообщение
+                  Ваша история или вопрос
                 </label>
                 <textarea
                   id="message"
@@ -126,7 +128,7 @@ export function Contact() {
                   onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                   rows={4}
                   className="w-full bg-transparent border-b border-border py-3 text-foreground placeholder:text-muted-foreground/50 focus:border-sage focus:outline-none transition-colors resize-none"
-                  placeholder="Расскажите о вашем проекте..."
+                  placeholder="Опишите, что произошло или задайте вопрос..."
                   required
                 />
               </div>

@@ -39,8 +39,7 @@ export function Testimonial() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          Работа с Wabi была похожа на медитацию. Они поняли, что наш дом должен поддерживать
-          благополучие семьи, а не просто красиво выглядеть. Результат — пространство, которое наконец ощущается как наше.
+          Мне позвонили «из банка» и сказали, что мои деньги переводят мошенники. Я почти перевела всё на «безопасный счёт». Эта страница помогла мне понять, что меня обманывают — я положила трубку и сохранила все сбережения.
         </blockquote>
 
         {/* Attribution */}
@@ -49,8 +48,8 @@ export function Testimonial() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="text-sm tracking-widest uppercase text-primary-foreground/80">Анна и Михаил Петровы</p>
-          <p className="text-sm text-primary-foreground/60 mt-1">Резиденция в Москве</p>
+          <p className="text-sm tracking-widest uppercase text-primary-foreground/80">Наталья, 58 лет</p>
+          <p className="text-sm text-primary-foreground/60 mt-1">Пенсионер, Екатеринбург</p>
         </div>
       </div>
     </section>
